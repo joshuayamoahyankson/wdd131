@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #f8f9fa;
+  }
+  
+  body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main container styling */
+  .image-container {
+    position: relative; /* Enable positioning for children */
+    width: 100%;
+    max-width: 1200px; /* Limit the image's width */
+    margin: 0 auto; /* Center the image on the page */
+    overflow: hidden; /* Prevent overflowing content */
+  }
+  
+  /* Image Styling */
+  .image-container img {
+    width: 100%; /* Scale the image to fit the container */
+    height: 550px; /* Maintain the aspect ratio */
+  }
+  
+  /* Data Section Styling */
+  .data {
+    position: absolute;
+    top: 20%; 
+    left: 10%;
+    background-color: rgba(0, 128, 0, 0.8); 
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 250px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Weather Section Styling */
+  .weather {
+    position: absolute;
+    bottom: 20%; /* Adjust placement as needed */
+    right: 10%;
+    background-color: rgba(0, 128, 0, 0.8); /* Semi-transparent green */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 250px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Additional Styling for the Main Element */
+  main {
+    padding: 20px;
+    text-align: center; /* Center any other content */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Additional Styling for Headings */
+  .data h2, .weather h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+.data, .weather {
+    background-color: rgba(0, 128, 0, 0.9); /* Darker background */
+    color: white; /* White text */
+}
+  /* Page Layout */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Add a background color for the page */
+    color: #333;
+    padding: 20px 0; /* Add spacing around the main container */
+  }
+
+  ul{
+    list-style: none;
+  }
+  h1{
+    display: flex;
+    justify-content: center;
+  }
+
+  .weather h2::after {
+    content: url('images/weather_clouds_sun_sunny_icon.svg'); /* Path to your SVG weather icon */
+    display: inline-block; /* Make it inline with text */
+    margin-left: 10px; /* Add spacing between text and icon */
+    vertical-align: middle; /* Align with the text */
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    
+  }
+

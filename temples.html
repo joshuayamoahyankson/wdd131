@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button class="hamburger" id="hamburger-button" aria-label="Open Menu">
+          &#9776; <!-- Unicode hamburger icon -->
+        </button>
+        <nav id="nav-menu" class="hidden">
+            <a href="#home">Home</a>
+            <a href="#old">Old</a>
+            <a href="#new">New</a>
+            <a href="#large">Large</a>
+            <a href="#small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <section class="gallery">
+            <figure>
+              <img class="temple-image" src="images/Salt%20Lake%20Temple.jpeg" alt="Salt Lake">
+              <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+              <img class="temple-image" src="images/St%20George%20Temple.jpeg" alt="St George">
+              <figcaption>St George Temple</figcaption>
+            </figure>
+            <figure>
+              <img class="temple-image" src="images/Chicago%20Illinois%20Temple.jpeg" alt="Chicago Illinois">
+              <figcaption>Chicago Illinois Temple</figcaption>
+            </figure>
+            <figure>
+                <img class="temple-image" src="images/Kansas%20City%20Missouri.jpeg" alt="Kansas City">
+                <figcaption>Kansas City Temple</figcaption>
+            </figure>
+            <figure>
+                <img class="temple-image" src="images/Preston%20England%20Temple.jpeg" alt="Preston England">
+                <figcaption>Preston England Temple</figcaption>
+            </figure>
+            <figure>
+                <img class="temple-image" src="images/Bengaluru%20India%20Temple.jpeg" alt="Bengaluru India">
+                <figcaption>Bengaluru Temple</figcaption>
+            </figure>
+            <figure>
+                <img class="temple-image" src="images/Oquirrh%20Mountain%20Utah.jpeg" alt="Oquirrh Mountain">
+                <figcaption>Oquirrh Mountain Temple</figcaption>
+            </figure>
+            <figure>
+                <img class="temple-image" src="images/Seoul%20Korea%20Temple.jpeg" alt="Seoul Korea">
+                <figcaption>Seoul Korea Temple</figcaption>
+            </figure>
+            <figure>
+                <img class="temple-image" src="images/Tokyo%20Japan%20Temple.jpeg" alt="Tokyo Japan">
+                <figcaption>Tokyo Japan Temple</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Joshua Yamoah Yankson Ghana <br>
+        </p>
+        <p id="lastModified">lastModified</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Root Variables */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #f8f9fa;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Centering */
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: #c00;
+    color: white;
+    padding: 10px;
+}
+
+/* Image Container */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* 60% of viewport height */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Image Styling */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the space */
+}
+
+/* Data and Weather Boxes */
+.data, .weather {
+    position: absolute;
+    top: 50%; /* Vertically centered */
+    transform: translateY(-50%);
+    width: 220px; /* Box width */
+    padding: 10px;
+    background-color: rgba(0, 128, 0, 0.8); /* Semi-transparent green */
+    color: white;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.data {
+    left: 5%; /* Position on the left */
+}
+
+.weather {
+    right: 5%; /* Position on the right */
+}
+
+/* Weather Heading Icon */
+.weather h2::after {
+    content: url('images/weather_clouds_sun_sunny_icon.svg');
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;       /* Center align the text */
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;          /* Standard font size */
+    color: #fff;              /* White text color */
+    background-color: #b71c1c; /* Dark red background */
+    padding: 10px 0;          /* Top and bottom padding */
+    line-height: 1.5;         /* Increase line spacing */
+}
+footer p {
+    margin: 0;                /* Remove default margins for p tags */
+    display: block;           /* Force each p to take up its own line */
+}
+
+.weather-icon {
+    display: none;
+}
+
+/* Emoji style for larger views (default) */
+.emoji-icon {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 8px; /* Add space between text and emoji */
+}
+ul{
+    list-style: none;
+  }
+
