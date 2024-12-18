@@ -1,0 +1,117 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Temple Container */
+#temple-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Temple Card Styling */
+.temple-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temple-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Temple Name */
+.temple-card h2 {
+    color: #3498db;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Temple Location */
+.temple-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Image Styling */
+.temple-card img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.temple-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #temple-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    #temple-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Text Enhancements */
+.temple-card p {
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Specific Temple Image Resizing */
+.temple-card img.accra-ghana {
+    width: 300px;
+    height: 200px;
+}
+
+.temple-card img.bountiful-utah {
+    width: 350px;
+    height: 220px;
+}
+
+.temple-card img.salt-lake {
+    width: 400px;
+    height: 250px;
+}
+

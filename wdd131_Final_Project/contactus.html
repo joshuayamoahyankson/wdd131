@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Joshua Yamoah Yankson">
+    <meta name="author" content="Joshua Yamoah Yankson">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/iphonestyles.css">
+    <script src="scripts/iphonehub.js" defer></script>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/JOBABS_LOGO.webp" alt="JOBABS Logo" width="200" height="150" loading="lazy">
+        </a>
+        <nav>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-form-section">
+            <h1>Contact Us</h1>
+            <p>We value your feedback! Please fill out the form below to reach out to us.</p>
+
+            <form id="contact-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" placeholder="Enter your name" required pattern="[A-Za-z\s]+" title="Name should contain letters only.">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="user_email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="user_message" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+            
+            <!-- Feedback area -->
+            <div id="feedback" style="margin-top: 10px;"></div>
+            
+            <!-- List of messages -->
+            <ul id="feedback-list"></ul>            
+            
+        </section>
+
+        <section id="contact-feedback">
+            <h2>Feedback</h2>
+            <div id="feedback-1"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-content">
+            <h3>JOBABS PHONES &copy; 2024 - iPhone Shop</h3>
+            <ul class="social-media">
+                <li><a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a></li>
+                <li><a href="https://gmail.com" target="_blank"><img src="images/gmail_logo.png" alt="Gmail" width="64" height="64"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
