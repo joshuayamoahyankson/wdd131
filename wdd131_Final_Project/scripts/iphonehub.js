@@ -36,14 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent default form submission behavior
+        event.preventDefault(); 
 
-        // Retrieve input values
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
         const message = document.getElementById("message").value.trim();
 
-        // Validate inputs
         if (!name.match(/^[A-Za-z\s]+$/)) {
             feedbackElement.textContent = "Please enter a valid name (letters and spaces only).";
             feedbackElement.style.color = "red";
