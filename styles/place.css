@@ -1,106 +1,108 @@
+/* Root Variables */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --text-color: #333;
-    --background-color: #f8f9fa;
-  }
-  
-  body {
-    color: var(--text-color);
-    background-color: var(--background-color);
-  }
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color: #333;
+  --background-color: #f8f9fa;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Main container styling */
-  .image-container {
-    position: relative; /* Enable positioning for children */
-    width: 100%;
-    max-width: 1200px; /* Limit the image's width */
-    margin: 0 auto; /* Center the image on the page */
-    overflow: hidden; /* Prevent overflowing content */
-  }
-  
-  /* Image Styling */
-  .image-container img {
-    width: 100%; /* Scale the image to fit the container */
-    height: 550px; /* Maintain the aspect ratio */
-  }
-  
-  /* Data Section Styling */
-  .data {
-    position: absolute;
-    top: 20%; 
-    left: 10%;
-    background-color: rgba(0, 128, 0, 0.8); 
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    max-width: 250px;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Weather Section Styling */
-  .weather {
-    position: absolute;
-    bottom: 20%; /* Adjust placement as needed */
-    right: 10%;
-    background-color: rgba(0, 128, 0, 0.8); /* Semi-transparent green */
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    max-width: 250px;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Additional Styling for the Main Element */
-  main {
-    padding: 20px;
-    text-align: center; /* Center any other content */
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Additional Styling for Headings */
-  .data h2, .weather h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: white;
-  }
-.data, .weather {
-    background-color: rgba(0, 128, 0, 0.9); /* Darker background */
-    color: white; /* White text */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  /* Page Layout */
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4; /* Add a background color for the page */
-    color: #333;
-    padding: 20px 0; /* Add spacing around the main container */
-  }
 
-  ul{
-    list-style: none;
-  }
-  h1{
-    display: flex;
-    justify-content: center;
-  }
+/* Header Centering */
+h1 {
+  display: flex;
+  justify-content: center;
+  background-color: #c00;
+  color: white;
+  padding: 10px;
+}
 
-  .weather h2::after {
-    content: url('images/weather_clouds_sun_sunny_icon.svg'); /* Path to your SVG weather icon */
-    display: inline-block; /* Make it inline with text */
-    margin-left: 10px; /* Add spacing between text and icon */
-    vertical-align: middle; /* Align with the text */
-  }
-  
-  footer {
-    display: flex;
-    justify-content: center;
-    
-  }
+/* Image Container */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 60vh; 
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Image Styling */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+/* Data and Weather Boxes */
+.data, .weather {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
+  width: 220px; 
+  padding: 10px;
+  background-color: rgba(0, 128, 0, 0.8); 
+  color: white;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.data {
+  left: 5%; 
+}
+
+.weather {
+  right: 5%; 
+}
+
+/* Weather Heading Icon */
+.weather h2::after {
+  content: url('images/weather_clouds_sun_sunny_icon.svg');
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;      
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem; 
+  color: #fff; 
+  background-color: #b71c1c; 
+  padding: 10px 0;         
+  line-height: 1.5;         
+}
+footer p {
+  margin: 0;                
+  display: block;           
+}
+
+.weather-icon {
+  display: none;
+}
+
+
+.emoji-icon {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-left: 8px; 
+}
+ul{
+  list-style: none;
+}
 

@@ -1,13 +1,13 @@
 @media (max-width: 768px) {
     .image-container {
-        height: 50vh; /* Reduced height for mobile */
+        height: 50vh; 
     }
 
     .data, .weather {
-        position: static; /* Remove absolute positioning */
-        transform: none; /* Reset vertical alignment */
-        width: 90%; /* Full width with margin */
-        margin: 10px auto; /* Center horizontally */
+        position: static; 
+        transform: none; 
+        width: 90%; 
+        margin: 10px auto; 
     }
 
     .data {
@@ -19,22 +19,22 @@
     }
 
     main {
-        height: auto; /* Allow natural height for mobile */
-        padding: 10px; /* Add some padding */
+        height: auto; 
+        padding: 10px;
     }
 
     h1 {
-        font-size: 1.5rem; /* Slightly smaller heading for mobile */
+        font-size: 1.5rem; 
     }
 
     .weather-icon {
-        display: inline-block; /* Show SVG icon */
-        width: 24px;           /* Adjust size of the icon */
+        display: inline-block; 
+        width: 24px;  
         height: 24px;
         margin-left: 8px;
     }
     .emoji-icon {
-        display: none; /* Hide the emoji */
+        display: none; 
     }
     
 /* Footer Styling */

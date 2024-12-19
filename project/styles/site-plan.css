@@ -1,0 +1,115 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #1B4965;
+    color: #BEE9E8; 
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-family: 'Charis SIL', serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headers */
+h2, h3, h4 {
+    color: #1B4965;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.colored {
+    color: #62B6CB;
+}
+
+/* Table Styling */
+table.colors {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table.colors th, table.colors td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 1.1em;
+}
+
+table.colors td {
+    background-color: #f4f4f4;
+}
+
+/* Links Styling */
+a {
+    color: #62B6CB;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1B4965;
+    text-decoration: underline;
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Horizontal Rule */
+hr {
+    border: 1px solid #ccc;
+    margin: 30px 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.1em;
+    color: #1B4965;
+}
